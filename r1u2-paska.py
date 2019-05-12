@@ -1,3 +1,4 @@
+#zadani https://fiks.fit.cvut.cz/files/tasks/season5/round1/paska.pdf
 import math
 
 debug = False
@@ -30,10 +31,6 @@ def get_min_angle_index(angles):
 def calculate_angle(point_vector, new_vector):
     angle_cos = ((point_vector[0]*new_vector[0]) + (point_vector[1]*new_vector[1])) / (math.sqrt((math.pow(point_vector[0],2) + math.pow(point_vector[1],2))) * math.sqrt((math.pow(new_vector[0],2) + math.pow(new_vector[1],2))))
     angle_cos = round(angle_cos, 4)
-    #p("uhel je")
-    #p(math.acos(angle_cos)*180/math.pi)
-    #p("y ceho delam anticosiinus?")
-    #p(angle_cos)
     return math.acos(angle_cos)
 
 #find index of point creating a vector which forms smallest angle
