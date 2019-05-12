@@ -1,3 +1,4 @@
+#zadani https://fiks.fit.cvut.cz/files/tasks/season5/round1/calendar.pdf
 debug = False
 def p(msg):
     if debug:
